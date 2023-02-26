@@ -33,7 +33,6 @@ class MusicAdapter(
                 tvNameOfMusic.text = item.nameOfSong
                 tvNameOfSinger.text = item.nameOfSinger
                 tvTime.text = item.timeOfSong
-
                 root.setOnClickListener {
                     onClick(musicList[adapterPosition].nameOfSong)
                 }

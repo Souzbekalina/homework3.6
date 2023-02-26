@@ -25,16 +25,16 @@ class SecondFragment : Fragment() {
 
         var list = ArrayList<MusicList>()
 
-        MusicList("1" ,"Some old Love", "Selena Gomes" , "3")
-        MusicList("2" ,"7 rigs", "Ariana Grande" , "3.45")
-        MusicList("3" ,"Say my Name ", "David Guetta" , "3.19")
-        MusicList("4" ,"Lemon", "Kenshi Yonesi" , "4.48")
-        MusicList("5" ,"So hot", "Blacpink" , "2.21")
-        MusicList("6" ,"love story", "Indila" , "3.54")
-        MusicList("7" ,"Dimple", "BTS" , "3.18")
-        MusicList("8" ,"Go GO", "BTS" , "4")
-        MusicList("9" ,"Type girl", "BTS" , "3.18")
-        MusicList("10" ," The Greatest", "Sea" , "3.28")
+        list.add( MusicList("1" ,"Some old Love", "Selena Gomes" , "3"))
+        list.add(MusicList("2" ,"7 rigs", "Ariana Grande" , "3.45"))
+        list.add( MusicList("3" ,"Say my Name ", "David Guetta" , "3.19"))
+        list.add(MusicList("4" ,"Lemon", "Kenshi Yonesi" , "4.48"))
+        list.add(MusicList("5" ,"So hot", "Blacpink" , "2.21"))
+        list.add(MusicList("6" ,"love story", "Indila" , "3.54"))
+        list.add(MusicList("7" ,"Dimple", "BTS" , "3.18"))
+        list.add(MusicList("8" ,"Go GO", "BTS" , "4"))
+        list.add(MusicList("9" ,"Type girl", "Blacpink" , "3.18"))
+        list.add(MusicList("10" ," The Greatest", "Sea" , "3.28"))
 
         adapter= MusicAdapter(list,this::onClick)
         binding.rvContainer.adapter = adapter
