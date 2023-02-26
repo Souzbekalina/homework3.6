@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="22dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:text="1"
+        android:padding="6dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="14dp"
+        android:id="@+id/tv_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Name of music"
+        android:padding="6dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:id="@+id/tv_nameOfMusic"
+        app:layout_constraintStart_toEndOf="@id/tv_one"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Name of singer"
+        android:padding="6dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:id="@+id/tv_nameOfSinger"
+        app:layout_constraintStart_toEndOf="@id/tv_one"
+        app:layout_constraintTop_toBottomOf="@id/tv_nameOfMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvTime"
+        android:text="6"
+        android:padding="6dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="64dp"
+        app:layout_constraintStart_toEndOf="@id/tv_nameOfMusic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
